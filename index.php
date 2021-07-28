@@ -17,5 +17,4 @@ if (isset($_SESSION['usuario'])) {
 } else {
   header('Location: '.RUTA.'login/login.php');
 }
-
  ?>

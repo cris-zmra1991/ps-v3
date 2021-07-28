@@ -7,7 +7,7 @@ try {
   	// [required]
   	'type' => 'mysql',
   	'host' => 'localhost',
-  	'database' => 'cms',
+  	'database' => 'cp',
   	'username' => 'root',
   	'password' => '',
    ]);

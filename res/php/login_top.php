@@ -1,4 +1,4 @@
 <?php
 require 'functions.php';
-define('RUTA', 'http://localhost/ps-v3/');
+define('RUTA', 'http://localhost:8030/ps-v3/');
 ?>
