@@ -1,2 +1,21 @@
 body{
   background-color: #f0f0f0;
+}
+
+.login_container{
+  width: 25%;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+}
+.login_container > .input,
+.login_container > button{
+  width: 100%;
+}
+.login_h2{
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}

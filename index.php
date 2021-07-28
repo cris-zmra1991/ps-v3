@@ -1,8 +1,5 @@
 <?php session_start();
-
-require 'admin/config.php';
-require 'functions.php';
-
+require 'res/php/app_top.php';
 // comprobar session
 if (isset($_SESSION['usuario'])) {
   // validar los datos por privilegio
