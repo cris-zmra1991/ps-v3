@@ -19,3 +19,18 @@ body{
   font-weight: 300;
   text-align: center;
 }
+.iframe_user_topmenu{
+  margin: 0px;
+  width: 100vw;
+  height: 55px;
+  border: 0px;
+}
+.iframe_user_content{
+  width: 100vw;
+  height: auto;
+  border: 0px;
+}
+.container_top_user{
+  margin: 0px;
+  padding: 5px;
+}
