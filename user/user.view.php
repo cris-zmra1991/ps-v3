@@ -5,7 +5,6 @@
     <title></title>
     <link rel="stylesheet" href="../res/css/semantic.min.css">
     <link rel="stylesheet" href="../res/css/main.css">
-
   </head>
   <body>
     <div class="container_top_user">
@@ -13,7 +12,7 @@
       <div class="item">
       <img src="../res/img/logo.png" height="25" >
     </div>
-    <a class="active item">
+    <a class="active item" href="first.php" target="iframe_user_content">
       Inicio
     </a>
     <a class="item">
@@ -33,6 +32,6 @@
     </a>
   </div>
 </div>
-    <iframe class="iframe_user_content" src="first.php"></iframe>
+    <iframe class="iframe_user_content" src="first.php" name="iframe_user_content" id="iframe_user_content"></iframe>
   </body>
   </html>
