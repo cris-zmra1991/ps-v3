@@ -15,7 +15,7 @@
     <a class="active item" href="first.php" target="iframe_user_content">
       Inicio
     </a>
-    <a class="item">
+    <a class="item" href="../usermg/usermg.php" target="iframe_user_content">
       Gestión de usuarios
     </a>
     <a class="item">
