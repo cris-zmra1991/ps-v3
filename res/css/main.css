@@ -1,5 +1,5 @@
 body{
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 .login_container{
   width: 25%;
@@ -26,12 +26,29 @@ body{
 }
 .iframe_user_content{
   width: 100vw;
-  height: auto;
+  height: 90vh;
   border: 0px;
+}
+.iframe_subpage{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #000;
+}
+.div_subpage{
+  height: 100%;
 }
 .container_top_user{
   margin: 0px;
   padding: 5px;
+}
+.container_top_newuser{
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
 }
 .container_first_full{
   width: 100vw;
