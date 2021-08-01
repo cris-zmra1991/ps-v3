@@ -5,6 +5,9 @@
     <title></title>
     <link rel="stylesheet" href="../res/css/semantic.min.css">
     <link rel="stylesheet" href="../res/css/main.css">
+    <link rel="stylesheet" href="../res/css/icon.min.css">
+
+    </script>
   </head>
   <body>
     <div class="container_top_user">
@@ -12,26 +15,43 @@
       <div class="item">
       <img src="../res/img/logo.png" height="25" >
     </div>
-    <a class="active item" href="first.php" target="iframe_user_content">
-      Inicio
+    <a class="ui labeled icon item" href="first.php" target="iframe_user_content">
+      <i class="home icon"></i>&nbsp;&nbsp;Inicio
     </a>
-    <a class="item" href="../usermg/usermg.php" target="iframe_user_content">
-      Gestión de usuarios
+    <a class="ui labeled icon item" href="../usermg/usermg.php" target="iframe_user_content">
+      <i class="users icon"></i>&nbsp;&nbsp;Gestión de usuarios
     </a>
-    <a class="item">
-      Inventarios
+    <a class="ui labeled icon item">
+      <i class="boxes icon"></i>&nbsp;&nbsp;Inventarios
     </a>
-    <a class="item">
-      Área técnica
+    <a class="ui labeled icon item">
+      <i class="edit icon"></i>&nbsp;&nbsp;Área técnica
     </a>
-    <a class="item">
-      Producción
+    <a class="ui labeled icon item">
+      <i class="cogs icon"></i>&nbsp;&nbsp;Producción
     </a>
-    <a class="item">
-      Calidad
+    <a class="ui labeled icon item">
+      <i class="clipboard check icon"></i>&nbsp;&nbsp;Calidad
     </a>
+
+    <div class="right menu">
+      <div class="ui simple dropdown item">
+        User
+        <div class="menu">
+        <a class="item">Electronics</a>
+        <a class="item">Automotive</a>
+        <a class="item">Home</a>
+        </div>
+      </div>
+      <a class="ui item">
+        <i class="sign-out icon"></i>
+      </a>
+
+  </div>
+
   </div>
 </div>
     <iframe class="iframe_user_content" src="first.php" name="iframe_user_content" id="iframe_user_content"></iframe>
+    <script type="text/javascript" src="../res/js/jquery.min.js"></script>
   </body>
   </html>
