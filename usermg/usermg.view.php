@@ -6,7 +6,57 @@
   </head>
   <link rel="stylesheet" href="../res/css/semantic.min.css">
   <link rel="stylesheet" href="../res/css/main.css">
+
   <body>
-    <div class="container_first_full"><br><p class="first_p">Gestión de usuarios</p></div>
+
+  <div class="container_top_newuser">
+    <div class="div_subpage ui grid">
+    <div class="four wide column">
+      <div class="ui large vertical menu">
+  <div class="item">
+    <div class="header">Usuarios</div>
+    <div class="menu">
+      <a class="item">Listado de usuarios</a>
+      <a class="item">Listado de solicitudes</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="header">Actualización</div>
+    <div class="menu">
+      <a class="item">Modificar usuarios</a>
+      <a class="item">Eliminar usuarios</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="header">Solicitudes</div>
+    <div class="menu">
+      <a class="item">Listar solicitudes</a>
+      <a class="item">Procesar solicitudes</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="header">Support</div>
+    <div class="menu">
+      <a class="item">E-mail Support</a>
+      <a class="item">Preguntas Frequentes</a>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="twelve wide column">
+      <div class="div_subpage ui segment">
+
+      <iframe class="iframe_subpage" src="" name="iframe_usermg_content" id="iframe_usermg_content"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+<script type="text/javascript" src="../res/js/semantic.min.js"></script>
+
+<script type="text/javascript">
+$('.tabular.menu .item').tab();
+</script>
   </body>
 </html>
