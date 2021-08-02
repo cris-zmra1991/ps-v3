@@ -9,7 +9,7 @@
   <body>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <div class="login_container">
+    <div class="login_container1">
       <form class="ui tiny form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <p class="login_h2">Acceso al sistema</p>
         <div class="input">

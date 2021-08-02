@@ -1,5 +1,5 @@
 body{
-  background-color: #fff;
+  background-color: #DEDEDE;
 }
 .login_container{
   width: 25%;
@@ -9,6 +9,17 @@ body{
   background-color: #fff;
   padding: 15px;
 }
+.login_container1{
+  width: 25%;
+  margin: auto;
+  border-radius:.28581429rem .28581429rem .28581429rem .28581429rem;
+  -webkit-box-shadow:0 1px 2px 0 rgba(34,36,38,.15);
+  box-shadow:0 2px 3px 0 rgba(34,36,38,.15);
+  border-color:rgba(0,0,0,.15);
+  background-color: #fff;
+  padding: 15px;
+}
+
 .login_container > .input,
 .login_container > button{
   width: 100%;
