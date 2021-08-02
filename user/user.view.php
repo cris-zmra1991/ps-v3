@@ -43,7 +43,7 @@
         <a class="item">Home</a>
         </div>
       </div>
-      <a class="ui item">
+      <a class="ui item" href="../conf/close.php">
         <i class="sign-out icon"></i>
       </a>
 
