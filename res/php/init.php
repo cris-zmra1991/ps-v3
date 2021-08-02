@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 require 'medoo.php';
 use Medoo\Medoo;
 try {

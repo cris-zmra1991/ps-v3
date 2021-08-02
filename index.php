@@ -1,20 +1,18 @@
-<?php session_start();
+<?php
 require 'res/php/app_top.php';
 // comprobar session
 if (isset($_SESSION['usuario'])) {
   // validar los datos por privilegio
-  $conexion = conexion($bd_config);
-  $usuario = iniciarSession('users', $conexion);
+  $data = $database->count("users",["user" => $_SESSION['usuario']]);
 
-  if ($usuario['user_type'] == '3') {
-    header('Location: '.RUTA.'adm/adm_page.php');
+  if ($data == '1') {
+    header('Location: '.RUTA.'user/user.php');
     //hay que crear uno para cada tipo de usuario -- que serian prod, tecnicos y pruebas
-  } elseif ($usuario['user_type'] == '1') {
-    header('Location: ../admin/user_without_access.php');
-  } else {
+    }
+    else {
     header('Location: '.RUTA.'login/login.php');
-  }
-} else {
-  header('Location: '.RUTA.'login/login.php');
+    }
+}else {
+header('Location: '.RUTA.'login/login.php');
 }
  ?>
