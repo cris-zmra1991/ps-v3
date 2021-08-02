@@ -10,7 +10,7 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <div class="login_container">
-      <div class="ui tiny form">
+      <form class="ui tiny form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <p class="login_h2">Acceso al sistema</p>
         <div class="input">
             <label>Nombre de usuario</label>
@@ -23,18 +23,19 @@
           <div class="input">
           <label>Compañía</label>
           <select class="ui fluid dropdown" name="company">
-            <option value="">State</option>
-            <option value="AL">Alabama</option>
-            <option value="AK">Alaska</option>
-            <option value="AZ">Arizona</option>
+            <?php
+              foreach ($comp as $valores):
+              echo '<option value="'.$valores["id_conf"].'">'.$valores["company_name"].'</option>';
+              endforeach; ?>
           </select>
           </div>
           <p>Solicitar nueva cuenta de usuario <a href="#">aquí</a></p>
-          <!-- BEGIN error box -->
-          <?php echo $errores; ?>
-          <!-- END error box -->
-        <div class="ui green tiny button fluid">Acceder</div>
-      </div>
+
+        <button class="ui green tiny button fluid" type="submit">Acceder</button>
+        <!-- BEGIN error box -->
+        <?php echo $errores; ?>
+        <!-- END error box -->
+      </form>
     </div>
   </body>
 </html>
