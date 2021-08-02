@@ -7,7 +7,6 @@ if (isset($_SESSION['usuario'])) {
 
   if ($data == '1') {
     header('Location: '.RUTA.'user/user.php');
-    //hay que crear uno para cada tipo de usuario -- que serian prod, tecnicos y pruebas
     }
     else {
     header('Location: '.RUTA.'login/login.php');
