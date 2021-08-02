@@ -11,8 +11,8 @@
 
   <div class="container_top_newuser">
     <div class="div_subpage ui grid">
-    <div class="four wide column">
-      <div class="ui large vertical menu">
+    <div class="two wide column">
+      <div class="ui fluid vertical menu">
   <div class="item">
     <div class="header">Usuarios</div>
     <div class="menu">
@@ -43,7 +43,7 @@
   </div>
 </div>
     </div>
-    <div class="twelve wide column">
+    <div class="fourteen wide column">
       <div class="div_subpage ui segment">
 
       <iframe class="iframe_subpage" src="" name="iframe_usermg_content" id="iframe_usermg_content"></iframe>
