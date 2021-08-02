@@ -19,7 +19,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $errores = '<p>Error, revise los datos introducidos</p>';
     }
   }
-
-
 require 'login.view.php';
 ?>
