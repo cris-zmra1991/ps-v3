@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     $password = hash('sha512', $password);
     $company = $_POST['company'];
-    $data = $database->select("users",["password"],["name" => $usuario]);
+    $data = $database->select("users",["password"],["user" => $usuario]);
     $itempass = $data[0]["password"];
     if ($password == $itempass) {
       $_SESSION['usuario'] = $usuario;
