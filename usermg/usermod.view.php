@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../res/css/icon.min.css">
 
   <body style="background-color: #fff;">
-    <h3>Listado de usuarios:</h3>
+    <h3>Modificar usuarios:</h3>
     <table class="ui striped table">
       <thead>
         <tr>
