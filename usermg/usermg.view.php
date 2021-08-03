@@ -23,8 +23,8 @@
   <div class="item">
     <div class="header">Actualización</div>
     <div class="menu">
-      <a class="item">Modificar usuarios</a>
-      <a class="item">Eliminar usuarios</a>
+      <a class="item" href="usermod.php" target="iframe_usermg_content">Modificar usuarios</a>
+      <a class="item" href="userdel.php" target="iframe_usermg_content">Eliminar usuarios</a>
     </div>
   </div>
   <div class="item">
