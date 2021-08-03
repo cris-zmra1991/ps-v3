@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CP-Panel de usuario</title>
     <link rel="stylesheet" href="../res/css/semantic.min.css">
     <link rel="stylesheet" href="../res/css/main.css">
     <link rel="stylesheet" href="../res/css/icon.min.css">
@@ -13,7 +13,7 @@
     <div class="container_top_user">
     <div class="ui inverted menu">
       <div class="item">
-      <img src="../res/img/logo.png" height="25" >
+      <img src="../res/img/logo.png" height="25" alt="Logo CCP">
     </div>
     <a class="ui labeled icon item" href="first.php" target="iframe_user_content">
       <i class="home icon"></i>&nbsp;&nbsp;Inicio
@@ -36,7 +36,9 @@
 
     <div class="right menu">
       <div class="ui simple dropdown item">
-        User
+        <?php  foreach ($data as $items) {
+          echo $items["user_name"].'&nbsp;'.$items["last_name"];
+        } ?>
         <div class="menu">
         <a class="item">Electronics</a>
         <a class="item">Automotive</a>
@@ -51,7 +53,7 @@
 
   </div>
 </div>
-    <iframe class="iframe_user_content" src="first.php" name="iframe_user_content" id="iframe_user_content"></iframe>
+    <iframe class="iframe_user_content" src="first.php" name="iframe_user_content" id="iframe_user_content" title="Contenedor para los modulos"></iframe>
     <script type="text/javascript" src="../res/js/jquery.min.js"></script>
   </body>
   </html>
