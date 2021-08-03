@@ -6,10 +6,13 @@ if (isset($_SESSION['usuario'])) {
     $data = $database->select("users","*",["user" => $usuario]);
     }
   else{
-    echo "No esta autenticado";
+    echo "Error";
   }
 
 require 'user.view.php';
+}
+else {
+  header('Location: '.RUTA.'login/login.php');
 }
 
 ?>
