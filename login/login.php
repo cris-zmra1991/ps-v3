@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $_SESSION['usuario'] = $usuario;
       $_SESSION['company'] = $company;
       $database->update("users",["active" => "1"],["user" => $usuario]);
-      header('Location: '.RUTA.'user/user.php');
+      header('Location: '.RUTA.'index.php');
     }
     else {
       $errores = '<p>Error, revise los datos introducidos</p>';
