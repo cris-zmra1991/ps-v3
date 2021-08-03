@@ -16,8 +16,8 @@
   <div class="item">
     <div class="header">Usuarios</div>
     <div class="menu">
-      <a class="item">Listado de usuarios</a>
-      <a class="item">Listado de solicitudes</a>
+      <a class="item" href="userlist.php" target="iframe_usermg_content">Listado de usuarios</a>
+      <a class="item" href="soliclist.php" target="iframe_usermg_content">Listado de solicitudes</a>
     </div>
   </div>
   <div class="item">
