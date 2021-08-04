@@ -7,11 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     $password = hash('sha512', $password);
     $company = $_POST['company'];
-    $data = $database->select("users",["password"],["user" => $usuario]);
-    $itempass = $data[0]["password"];
-    if ($password == $itempass) {
-      $_SESSION['usuario'] = $usuario;
+    $data = $database->select("users","*",["user" => $usuario]);
+      foreach ($data as $sesion)
+      {
+      $_SESSION['id_user'] = $sesion["user_id"];
+      $_SESSION['usuario'] = $sesion["user"];
+      $itempass = $sesion["password"];
+      }
       $_SESSION['company'] = $company;
+    if ($password == $itempass) {
       $database->update("users",["active" => "1"],["user" => $usuario]);
       header('Location: '.RUTA.'index.php');
     }
