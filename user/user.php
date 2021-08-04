@@ -8,11 +8,9 @@ if (isset($_SESSION['usuario'])) {
   else{
     echo "Error";
   }
-
 require 'user.view.php';
 }
 else {
   header('Location: '.RUTA.'login/login.php');
 }
-
 ?>
