@@ -36,7 +36,7 @@
 
     <div class="right menu">
       <div class="ui simple dropdown item">
-        <?php  foreach ($data as $items) {
+        <?php  foreach ($user as $items) {
           echo $items["user_name"].'&nbsp;'.$items["last_name"];
         } ?>
         <div class="menu">
