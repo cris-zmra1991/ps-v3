@@ -30,11 +30,12 @@
             <td><?php echo $solicitudes["user_name"] ?></td>
             <td><?php echo $solicitudes["last_name"] ?></td>
             <td><?php echo $solicitudes["email"] ?></td>
-            <td><a class="ui red button" href="<?php echo "user_delete.php?name=" . $solicitudes["user"]?>"><i class="trash alternate icon"></i></a></td>
+            <td><a class="ui red button" href="<?php echo "userdelete.php?name=" . $solicitudes["user"]?>"><i class="trash alternate icon"></i></a></td>
           </tr>
         <?php } ?>
       </tbody>
     </table>
+
 <script type="text/javascript" src="../res/js/jquery.min.js"></script>
 <script type="text/javascript" src="../res/js/semantic.min.js"></script>
 
