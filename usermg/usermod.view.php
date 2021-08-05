@@ -30,7 +30,7 @@
             <td><?php echo $solicitudes["user_name"] ?></td>
             <td><?php echo $solicitudes["last_name"] ?></td>
             <td><?php echo $solicitudes["email"] ?></td>
-            <td><a class="ui orange button" href="<?php echo "user_delete.php?name=" . $solicitudes["user"]?>"><i class="edit icon"></i></a></td>
+            <td><a class="ui orange button" href="<?php echo "modify.php?name=" . $solicitudes["user"]?>"><i class="edit icon"></i></a></td>
           </tr>
         <?php } ?>
       </tbody>
